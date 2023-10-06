@@ -4,7 +4,7 @@ import { initPassport } from '../../utils/passport-config';
 
 initPassport();
 
-export default function handler(req, res, next) {
+export default function facebook(req, res, next) {
     passport.authenticate('facebook', {
         successRedirect: '/',
         failureRedirect: '/erro',

@@ -1,10 +1,15 @@
+import Conectar from '@/components/Conectar';
 import React from 'react';
+
+import styles from '@/styles/Home.module.css'
 
 export default function Home() {
     return (
-        <div>
+        <div className={styles.content}>
             <h1>Bem-vindo ao Meu Aplicativo</h1>
-            {/* Conteúdo da Página */}
+            <div>
+                <Conectar />
+            </div>
         </div>
     );
 }
